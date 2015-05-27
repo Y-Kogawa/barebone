@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	ボタン
+------------------------------------------------------------*/
+.label {
+	padding: .3em .3em .2em;
+	background: #eee;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	display: inline-block;
+	position: relative;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	line-height: 1;
+
+	&.label-flex {
+		box-sizing: border-box;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+		padding-left: 1em;
+		width: 100%;
+		display: block;
+	}
+
+	&.label-xsmall {
+		font-size: 84.61538%;
+	}
+
+	&.label-small {
+		font-size: 92.30769%;
+	}
+
+	&.label-large {
+		font-size: 107.69231%; 
+	}
+
+	&.label-xlarge {
+		font-size: 115.38462%;
+	}
+
+	&.label-red {
+		color: #fff;
+		background: #FF3D3D;
+		border-color: #CA2525;
+	}
+
+	&.label-blue {
+		color: #fff;
+		background: #0095cd;
+		border-color: #0083B4;
+	}
+
+	&.label-green {
+		color: #fff;
+		background: #64991e;
+		border-color: #4C7516;
+	}
+
+	&.label-orange {
+		color: #fff;
+		background: #f78d1d;
+		border-color: #C5731D;
+	}
+
+	&.label-white {
+		background: #fff;
+	}
+
+	&.label-black {
+		color: #fff;
+		background: #333;
+	}
+}

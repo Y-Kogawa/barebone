@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	パネル
+------------------------------------------------------------*/
+.panel {
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	> .panel-ttl {
+		padding: 10px;
+		background: #eee;
+	}
+
+	> .panel-inner {
+		padding: 20px;
+		> :first-child {
+			margin-top: 0;
+		}
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&.panel-deco {
+		border: none;
+		background: url(../img/demo/panel_deco_m.png) repeat-y;
+		> .panel-cover {
+			background: url(../img/demo/panel_deco_t.png) no-repeat;
+			> .panel-inner {
+				padding: 20px;
+				background: url(../img/demo/panel_deco_b.png) no-repeat left bottom;
+			}
+		}
+	}
+
+	&.panel-deco-flex {
+		padding-top: 30px;
+		background: url(../img/demo/panel_flex_r.png) repeat-y right top;
+		border: none;
+		position: relative;
+		&:before,
+		&:after {
+			position: absolute;
+			content: "";
+		}
+		&:before {
+			width: 100%;
+			height: 50px;
+			background: url(../img/demo/panel_flex_rt.png) no-repeat right top;
+			top: 0;
+			right: 0;
+		}
+		&:after {
+			width: 50px;
+			height: 50px;
+			background: url(../img/demo/panel_flex_lt.png) no-repeat;
+			top: 0;
+			left: 0;
+		}
+		> .panel-cover {
+			padding-bottom: 30px;
+			background: url(../img/demo/panel_flex_l.png) repeat-y;
+			&:before,
+			&:after {
+				position: absolute;
+				content: "";
+			}
+			&:before {
+				width: 100%;
+				height: 50px;
+				background: url(../img/demo/panel_flex_rb.png) no-repeat right top;
+				bottom: 0;
+				right: 0;
+			}
+			&:after {
+				width: 50px;
+				height: 50px;
+				background: url(../img/demo/panel_flex_lb.png) no-repeat;
+				bottom: 0;
+				left: 0;
+			}
+			> .panel-inner {
+				padding: 0 20px;
+				position: relative;
+				z-index: 1;
+				> :first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	回り込みテキスト
+------------------------------------------------------------*/
+.text-runaround {
+	> :first-child {
+		margin-top: 0;
+	}
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+
+	.left {
+		margin: 0 20px 10px 0;
+		float: left;
+	}
+
+	.right {
+		margin: 0 0 10px 20px;
+		float: right;
+	}
+}

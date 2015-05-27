@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	min-width: $container_width;
+	/* ウインドウ幅で横スクロール時に背景が切れるバグ対策でコンテンツと同じ幅を指定 */
+	background-color: #FFFFEA;
+}
+
+.wrapConts {
+	margin-right: auto;
+	margin-left: auto;
+	width: $container_width;
+}
+
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+#header {
+	padding: 15px 0 10px;
+	background-color: #FFCD4A;
+	position: relative;
+	border-bottom: 1px dashed rgba(230, 80, 59, 1);
+	> .wrapConts {
+		position: relative;
+	}
+
+	.logo {
+		color: #000;
+		text-decoration: none;
+		color: #555;
+		font-family: 'Kalam', cursive;
+		@include fs(30);
+		line-height: 1;
+	}
+
+	.banner {
+		width: 250px;
+		height: 50px;
+		background-color: #ccc;
+	}
+
+	.otherNavi {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+/*------------------------------------------------------------
+	グローバルナビ
+------------------------------------------------------------*/
+#gNavi {
+	margin-bottom: 10px;
+	padding: 10px 0;
+	background-color: #E5E4C7;
+	li {
+		margin-left: 5px;
+		a {
+			padding: .2em .8em .15em;
+			background-color: #6AACB8;
+			border-radius: .6em;
+			display: inline-block;
+			@include fs(14);
+			color: #fff;
+			font-family: arial;
+			text-align: center;
+			text-decoration: none;
+			&:hover {
+				background-color: #E6503B;
+			}
+		}
+	}
+	.wrapConts :first-child {
+		margin-left: 0;
+	}
+}
+
+/*------------------------------------------------------------
+	パンクズリスト
+------------------------------------------------------------*/
+#pagePath {
+	margin-bottom: 10px;
+	li {
+		margin-left: 0;
+		&:before {
+			margin-right: 3px;
+			content: ">";
+		}
+	}
+	:first-child {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+/*------------------------------------------------------------
+	コンテンツ
+------------------------------------------------------------*/
+#main {
+	margin: 10px 0 50px;
+	@include fs(14);
+	line-height: 1.85;
+}
+
+#conts {
+	width: 730px;
+}
+
+/*------------------------------------------------------------
+	サイドバー
+------------------------------------------------------------*/
+#sideBar {
+	width: 250px;
+}
+
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+#footer {
+	padding: 10px 10px 5px;
+	> .wrapConts {
+		position: relative;
+	}
+	.pageTop {
+		position: absolute;
+		top: -2em;
+		right: 0;
+	}
+	.subNavi {
+		@include fs(12);
+		text-align: center;
+		li {
+			display: inline;
+			&:before {
+				margin-right: 4px;
+				content: "|";
+			}
+		}
+		:first-child {
+			border-right: none;
+			&:before {
+				display: none;
+			}
+		}
+	}
+	.copyright {
+		display: block;
+		@include fs(11);
+		text-align: right;
+		font-style: normal;
+	}
+}

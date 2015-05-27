@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "compass";
+@import "vars";
+body {
+	margin: 20px;
+}
+
+#demo {
+	margin-right: 300px;
+	font-size: 13px;
+	line-height: 1.6;
+	
+	hr {
+		margin: 15px 0;
+	}
+}
+
+#gNavi {
+	padding: 10px;
+	width: 260px;
+	background: #EFEFEF;
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	font-size: 14px;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+.grid-sample {
+	.grid-row,
+	.grid-table {
+		margin-bottom: 5px;
+	}
+
+	.grid-col {
+		height: 40px;
+		border: 1px solid #ccc;
+		text-align: center;
+	}
+
+	.grid-table {
+		.grid-col {
+			vertical-align: middle;
+		}
+	}	
+}

@@ -1,0 +1,759 @@
+@charset "UTF-8";
+/* =============================================================================
+   normalize.css
+   2011-07-06T20:20 UTC
+   //github.com/jonathantneal/normalize.css
+
+   Normalize.css is a customisable CSS file that makes browsers render all
+   elements more consistently and in line with modern standards. We researched
+   the differences between default browser styles in order to precisely target
+   only the styles that need normalizing.
+
+   How comment documentation is written:
+   Comments: (anchor) (type of change) (summary of issue) in (affected browsers)
+   Url: (url related to above comment)
+
+   To be concise, comments are restricted to a length of 77 characters or less.
+
+   What 'types of change' mean:
+   Addresses: Changes involving downgrades for greater cross-browser consistency
+   Corrects: Bug fixes and corrections to unexpected visual quirks
+   Improves: Improvements based on popular usage and html5 recommendation
+   ========================================================================== */
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/*
+ * 1. Improves visual focus of mouse in all browsers
+ * 2. Corrects text resizing oddly when font size is set using ems in IE6/7
+ *    http://clagnut.com/blog/348/#c790
+ * 3. Corrects page centering in all browsers regardless of content height
+ * 4. Improves visual appearance of containers during a delegated click in mSaf
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 5. Corrects text resizing oddly after orientation change in all handhelds
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  cursor: default;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  overflow-y: scroll;
+  /* 3 */
+  -webkit-tap-highlight-color: transparent;
+  /* 4 */
+  -ms-text-size-adjust: 100%;
+  /* 5 */
+  -webkit-text-size-adjust: 100%;
+  /* 5 */
+}
+
+/*
+ * 1. Addresses text resizing limitations in IE6/7
+ *    Improves text sizing inconsistency in all browsers
+ *    Known issue: text sizing unnecessary for 'form'
+ * 2. Improves margins set oddly in IE6/7 FF3/4 S5 C10
+ */
+body,
+form,
+input,
+button,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Improves appearance when active or hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a,
+a:active,
+a:hover {
+  outline: none;
+}
+
+/*
+ * Addresses outline set oddly in C10
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Corrects styling not present in IE6/7/8/9 S5 C10
+ */
+abbr {
+  _border-bottom: expression(this.title ? '1px dotted' : 'none');
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Corrects style set incorrectly as 'bolder' in FF3/4 S4/5 C10
+*/
+b,
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Corrects styling not present in S5 C10
+ */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Corrects styling not present in IE6/7/8/9
+ */
+mark {
+  background: #FF0;
+  color: #000;
+}
+
+/*
+ * Corrects font family displayed oddly in IE6 S5 C10
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE6/7
+ */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses quote property not supported in S4
+ */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Improves appearance in all browsers
+ */
+small,
+sub,
+sup {
+  font-size: 75%;
+}
+
+/*
+ * Improves appearance in all browsers
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Improves appearance of navigation-specific lists
+ */
+nav ul {
+  list-style: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Corrects display not defined in IE6/7/8/9 & FF3
+ */
+audio[controls],
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+}
+
+audio {
+  display: none;
+  _display: expression(this.controls ? 'inline' : 'none');
+  *zoom: 1;
+}
+
+audio[controls] {
+  display: inline-block;
+}
+
+/*
+ * 1. Improves readability when inside 'a' in all browsers
+ * 2. Improves visual appearance when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects alignment displayed oddly in IE6/7
+ */
+legend {
+  *margin-left: -7px;
+}
+
+/*
+ * Improves appearance in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  border-radius: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/*
+ * 1. Corrects FF3/4 setting it using !important in the UA stylesheet
+ * 2. Corrects spacing displayed oddly in IE6/7
+ * 3. Corrects inability to style clickable 'input' types in iOS
+ */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+  _overflow: expression(this.type == 'button|reset|submit' ? 'visible' : '');
+  /* 2 */
+}
+
+/* 3 */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  overflow: visible;
+}
+
+/*
+ * Addresses box sizing forced to border-box in IE6/7
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+}
+
+/*
+ * Addresses sizing set oddly to searchfield in S5 iOS C10
+ * Known issue: -moz included to future-proof
+ */
+input[type="search"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/*
+ * Addresses inner padding displayed oddly in S5 C10 on OSX
+ */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Corrects appearance displayed oddly in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Corrects scrollbar displayed oddly in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Improves visual appearance in all browsers
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =============================================================================
+   reset
+   ========================================================================== */
+html, body, div, h1, h2, h3, h4, h5, h6, p, pre, 　a, code, img, dl, dt, dd, ol, ul, li, 　fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+/* =============================================================================
+   base
+   ========================================================================== */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+/*------------------------------------------------------------
+	書式設定
+------------------------------------------------------------*/
+/* テキストの位置 */
+.taLeft {
+  text-align: left !important;
+}
+
+.taCenter {
+  text-align: center !important;
+}
+
+.taRight {
+  text-align: right !important;
+}
+
+.vTop {
+  vertical-align: top !important;
+}
+
+.vMiddle {
+  vertical-align: middle !important;
+}
+
+/* フォントの太さ */
+.fwNormal {
+  font-weight: normal !important;
+}
+
+.fwBold {
+  font-weight: bold !important;
+}
+
+/*------------------------------------------------------------
+	微調整用クラス（※多用しないこと）
+------------------------------------------------------------*/
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+/*------------------------------------------------------------
+	clearfix（float解除）
+------------------------------------------------------------*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/*------------------------------------------------------------
+	調整
+------------------------------------------------------------*/
+.w10p {
+  width: 10%;
+}
+
+.w15p {
+  width: 15%;
+}
+
+.w20p {
+  width: 20%;
+}
+
+.w25p {
+  width: 25%;
+}
+
+.w30p {
+  width: 30%;
+}
+
+.w33p {
+  width: 33%;
+}
+
+.w34p {
+  width: 34%;
+}
+
+.w35p {
+  width: 35%;
+}
+
+.w40p {
+  width: 40%;
+}
+
+.w45p {
+  width: 45%;
+}
+
+.w50p {
+  width: 50%;
+}
+
+.w55p {
+  width: 55%;
+}
+
+.w60p {
+  width: 60%;
+}
+
+.w65p {
+  width: 65%;
+}
+
+.w70p {
+  width: 70%;
+}
+
+.w75p {
+  width: 75%;
+}
+
+.w80p {
+  width: 80%;
+}
+
+.w85p {
+  width: 85%;
+}
+
+.w90p {
+  width: 90%;
+}
+
+.w95p {
+  width: 95%;
+}
+
+.w100p {
+  width: 100%;
+}
+
+/*------------------------------------------------------------
+	見出し
+------------------------------------------------------------*/
+.ttl {
+  margin: 30px 0 15px;
+  padding: 10px 10px 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.ttl.ttl-xsm {
+  margin: 10px 0 5px;
+  font-size: 12px;
+}
+.ttl.ttl-sm {
+  margin: 20px 0 10px;
+  font-size: 14px;
+}
+.ttl.ttl-lg {
+  margin: 40px 0 20px;
+  font-size: 18px;
+}
+.ttl.ttl-xlg {
+  margin: 50px 0 30px;
+  font-size: 20px;
+}
+.ttl.ttl-pdg-none {
+  padding: 0;
+}
+.ttl.ttl-pdg-xsm {
+  padding: 3px 2px 0;
+}
+.ttl.ttl-pdg-sm {
+  padding: 5px 5px 3px;
+}
+.ttl.ttl-pdg-lg {
+  padding: 15px 15px 13px;
+}
+.ttl.ttl-pdg-xlg {
+  padding: 20px 20px 18px;
+}
+.ttl.ttl-border {
+  border: 1px solid #ccc;
+}
+.ttl.ttl-border-t {
+  border-top: .2em solid #999;
+}
+.ttl.ttl-border-b {
+  border-bottom: .2em solid #999;
+}
+.ttl.ttl-border-tb {
+  border-top: .2em solid #999;
+  border-bottom: 1px dotted #000;
+}
+.ttl.ttl-border-l {
+  border-left: .3em solid #999;
+}
+.ttl.ttl-border-wb {
+  padding: 0;
+  border-bottom: 2px solid #CCC;
+}
+.ttl.ttl-border-wb > span {
+  margin-bottom: -2px;
+  padding: 10px 10px 8px;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+}
+.ttl.ttl-border-wb.ttl-pdg-none > span {
+  padding: 0;
+}
+.ttl.ttl-border-wb.ttl-pdg-xsm > span {
+  padding: 3px 2px 0;
+}
+.ttl.ttl-border-wb.ttl-pdg-sm > span {
+  padding: 5px 5px 3px;
+}
+.ttl.ttl-border-wb.ttl-pdg-lg > span {
+  padding: 15px 15px 13px;
+}
+.ttl.ttl-border-wb.ttl-pdg-xlg > span {
+  padding: 20px 20px 18px;
+}
+
+/*------------------------------------------------------------
+	背景
+------------------------------------------------------------*/
+.bg-gray {
+  background-color: #f3f3f3;
+}
+
+.bg-grd-y {
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f2f2f2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f2f2f2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );
+  /* IE6-9 */
+}
+
+/*------------------------------------------------------------
+	パネル
+------------------------------------------------------------*/
+.panel {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  zoom: 1;
+}
+
+.panel > :first-child {
+  margin-top: 0;
+}
+
+.ie8 .panel {
+  border: 2px solid #ddd;
+}
+
+/*------------------------------------------------------------
+	グリッドシステム
+------------------------------------------------------------*/
+.grid-row > .grid-col {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid-row > .grid-col.col-1 {
+  width: 8.33333333%;
+}
+.grid-row > .grid-col.col-2 {
+  width: 16.66666667%;
+}
+.grid-row > .grid-col.col-3 {
+  width: 25%;
+}
+.grid-row > .grid-col.col-4 {
+  width: 33.3333333%;
+}
+.grid-row > .grid-col.col-5 {
+  width: 41.66666667%;
+}
+.grid-row > .grid-col.col-6 {
+  width: 50%;
+}
+.grid-row > .grid-col.col-7 {
+  width: 58.33333333%;
+}
+.grid-row > .grid-col.col-8 {
+  width: 66.66666667%;
+}
+.grid-row > .grid-col.col-9 {
+  width: 75%;
+}
+.grid-row > .grid-col.col-10 {
+  width: 83.33333333%;
+}
+.grid-row > .grid-col.col-11 {
+  width: 91.66666667%;
+}
+.grid-row > .grid-col.col-12 {
+  width: 100%;
+}
+.grid-row:before, .grid-row:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.grid-table {
+  display: table;
+}
+.grid-table .grid-tr {
+  display: table-row;
+}
+.grid-table .grid-col {
+  display: table-cell;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+
+.radius {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+
+.radius-sm {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+
+.radius-lg {
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  -ms-border-radius: 0.75em;
+  -o-border-radius: 0.75em;
+  border-radius: 0.75em;
+}

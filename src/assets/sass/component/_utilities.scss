@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	書式設定
+------------------------------------------------------------*/
+/* テキストの位置 */
+.ta-left { text-align: left !important; }
+.ta-center { text-align: center !important; }
+.ta-right { text-align: right !important; }
+.va-top { vertical-align: top !important;}
+.va-middle { vertical-align: middle !important;}
+
+/* フォントの太さ */
+.fw-normal { font-weight: normal !important; }
+.fw-bold { font-weight: bold !important; }
+
+/* 強調 */
+.text-warning { color: #f33; font-weight: bold; }
+
+.sentence {
+	p {
+		margin-bottom: 1.5em;
+	}
+}
+
+/*------------------------------------------------------------
+	回り込み
+------------------------------------------------------------*/
+.float-l { float: left; }
+.float-r { float: right; }
+
+/*------------------------------------------------------------
+	clearfix
+------------------------------------------------------------*/
+.clearfix {
+	*zoom: 1;
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+}

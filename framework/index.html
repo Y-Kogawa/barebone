@@ -1,0 +1,399 @@
+<!--[if IE 8]><html lang="ja" class="ie8 lt-ie9"><![endif]-->
+<!--[if IE 9]><html lang="ja" class="ie9"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ja"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<link href="css/codevar.css" rel="stylesheet" type="text/css" />
+<link href="css/demo.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<h1 class="ttl ttl-border-tb ttl-lg">Codevar CSSフレームワーク</h1>
+
+<nav id="gNavi">
+	<ul>
+		<li><a href="#headline">見出し</a></li>
+		<li><a href="#gridSystem">グリッドシステム</a></li>
+		<li><a href="#panel">パネル</a></li>
+		<li><a href="#wraparound">回りこみテキスト</a></li>
+		<li><a href="#button">ボタン</a></li>
+		<li><a href="#label">ラベル</a></li>
+		<li><a href="#list">リスト</a></li>
+	</ul>
+</nav>
+
+<section id="demo">
+	<h2 class="ttl ttl-border-wb" id="headline"><span>見出し</span></h2>
+	<div class="panel">
+		<div class="panel-inner">
+			<h1 class="ttl">プレーン</h1>
+			<h1 class="ttl ttl-border">囲い線</h1>
+			<h1 class="ttl ttl-border-t">上線</h1>
+			<h1 class="ttl ttl-border-b">下線</h1>
+			<h1 class="ttl ttl-border-wb"><span>下線2色</span></h1>
+			<h1 class="ttl ttl-border-l">見出し 左線</h1>
+			<h1 class="ttl ttl-border-tb">上下線</h1>
+			
+			<hr>
+			
+			<h1 class="ttl ttl-border-tb">サイズバリエーション</h1>
+			
+			<h1 class="ttl ttl-border ttl-xsm">x-small</h1>
+			<h1 class="ttl ttl-border ttl-sm">small</h1>
+			<h1 class="ttl ttl-border">default</h1>
+			<h1 class="ttl ttl-border ttl-lg">large</h1>
+			<h1 class="ttl ttl-border ttl-xlg">x-large</h1>
+			
+			<hr>
+			
+			<h1 class="ttl ttl-border-tb">内余白バリエーション</h1>
+			
+			<h1 class="ttl ttl-border ttl-pdg-none">none</h1>
+			<h1 class="ttl ttl-border ttl-pdg-xsm">x-small</h1>
+			<h1 class="ttl ttl-border ttl-pdg-sm">small</h1>
+			<h1 class="ttl ttl-border">default</h1>
+			<h1 class="ttl ttl-border ttl-pdg-lg">large</h1>
+			<h1 class="ttl ttl-border ttl-pdg-xlg">x-large</h1>
+		</div>
+	</div>
+
+	<h2 class="ttl ttl-border-wb" id="gridSystem"><span>グリッドシステム</span></h2>
+	<div class="panel grid-sample">
+		<div class="panel-inner">
+			<h3 class="ttl ttl-border-tb">float</h3>
+			<div class="grid-row">
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+			</div>
+			
+			<div class="grid-row">
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+			</div>
+			
+			<div class="grid-row">
+				<div class="grid-col col-4">col-4</div>
+				<div class="grid-col col-4">col-4</div>
+				<div class="grid-col col-4">col-4</div>
+			</div>
+			
+			<div class="grid-row">
+				<div class="grid-col col-6">col-6</div>
+				<div class="grid-col col-6">col-6</div>
+			</div>
+			
+			<div class="grid-row">
+				<div class="grid-col col-12">col-12</div>
+			</div>
+			
+			<h3 class="ttl ttl-border-tb">display: table</h3>
+			
+			<div class="grid-table w100p">
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+				<div class="grid-col col-1">col-1</div>
+			</div>
+			
+			<div class="grid-table w100p">
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+				<div class="grid-col col-2">col-2</div>
+			</div>
+			
+			<div class="grid-table w100p">
+				<div class="grid-col col-4">col-4</div>
+				<div class="grid-col col-4">col-4</div>
+				<div class="grid-col col-4">col-4</div>
+			</div>
+			
+			<div class="grid-table w100p">
+				<div class="grid-col col-6">col-6</div>
+				<div class="grid-col col-6">col-6</div>
+			</div>
+			
+			<div class="grid-table w100p">
+				<div class="grid-col col-12">col-12</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="ttl ttl-border-wb" id="panel"><span>パネル</span></h2>
+	<div class="panel">
+		<div class="panel-inner">
+			<h3 class="ttl ttl-border-tb">標準</h3>
+			<div class="panel">
+				<div class="panel-inner">
+					<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+				</div>
+			</div>
+
+			<h3 class="ttl ttl-border-tb">タイトル付き</h3>
+			<section class="panel">
+				<h1 class="panel-ttl">タイトル</h1>
+				<div class="panel-inner">
+					<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+				</div>
+			</section>
+
+			<h3 class="ttl ttl-border-tb">角丸</h3>
+			<section class="panel radius">
+				<h1 class="panel-ttl">タイトル</h1>
+				<div class="panel-inner">
+					<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+				</div>
+			</section>
+
+			<h3 class="ttl ttl-border-tb">画像装飾（縦可変・横固定）</h3>
+			<div class="panel panel-deco w200">
+				<div class="panel-cover">
+					<div class="panel-inner">
+						<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+					</div>
+				</div>
+			</div>
+
+			<h3 class="ttl ttl-border-tb">画像装飾（縦横可変）</h3>
+			<div class="panel panel-deco-flex">
+				<div class="panel-cover">
+					<div class="panel-inner">
+						<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-row">
+				<div class="grid-col col-2">
+					<div class="panel panel-deco-flex">
+						<div class="panel-cover">
+							<div class="panel-inner">
+								<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid-col col-4">
+					<div class="panel panel-deco-flex">
+						<div class="panel-cover">
+							<div class="panel-inner">
+								<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid-col col-6">
+					<div class="panel panel-deco-flex">
+						<div class="panel-cover">
+							<div class="panel-inner">
+								<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="ttl ttl-border-wb" id="wraparound"><span>回りこみテキスト</span></h2>
+	<div class="panel">
+		<div class="panel-inner">
+			<div class="text-runaround">
+				<img src="img/dummy01.png" height="160" width="220" alt="" class="left">
+				<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+
+				<img src="img/dummy01.png" height="160" width="220" alt="" class="right">
+				<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+
+				<div class="panel left">
+					<div class="panel-inner">
+						<p>サンプルテキスト</p>
+					</div>
+				</div>
+				<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+
+				<section class="panel radius right">
+					<h1 class="panel-ttl">タイトル</h1>
+					<div class="panel-inner">
+						<p>サンプルテキスト</p>
+					</div>
+				</section>
+				<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="ttl ttl-border-wb" id="button"><span>ボタン</span></h2>
+	<div class="panel">
+		<div class="panel-inner">
+			<button class="btn btn-xsmall">xsmall</button>
+			<button class="btn btn-small">small</button>
+			<button class="btn">normal</button>
+			<button class="btn btn-large">large</button>
+			<button class="btn btn-xlarge">xlarge</button>
+			<hr>
+			<a href="#" class="btn btn-xsmall radius">xsmall</a>
+			<a href="#" class="btn btn-small radius">small</a>
+			<a href="#" class="btn radius">normal</a>
+			<a href="#" class="btn btn-large radius">large</a>
+			<a href="#" class="btn btn-xlarge radius">xlarge</a>
+			<hr>
+			<a href="#" class="btn btn-flex">normal</a>
+			<hr>
+			<a href="#" class="btn btn-orange">orange</a>
+			<a href="#" class="btn btn-blue">blue</a>
+			<a href="#" class="btn btn-green">green</a>
+			<a href="#" class="btn btn-white">white</a>
+			<a href="#" class="btn btn-black">black</a>
+			<hr>
+			<a href="#" class="btn btn-orange disabled">orange</a>
+			<a href="#" class="btn btn-blue disabled">blue</a>
+			<a href="#" class="btn btn-green disabled">green</a>
+			<a href="#" class="btn btn-white disabled">white</a>
+			<a href="#" class="btn btn-black disabled">black</a>
+		</div>
+	</div>
+
+	<h2 class="ttl ttl-border-wb" id="label"><span>ラベル</span></h2>
+	<div class="panel">
+		<div class="panel-inner">
+			<div class="label label-xsmall">xsmall</div>
+			<div class="label label-small">small</div>
+			<div class="label">normal</div>
+			<div class="label label-large">large</div>
+			<div class="label label-xlarge">xlarge</div>
+			<hr>
+			<div class="label label-xsmall radius">xsmall</div>
+			<div class="label label-small radius">small</div>
+			<div class="label radius">normal</div>
+			<div class="label label-large radius">large</div>
+			<div class="label label-xlarge radius">xlarge</div>
+			<hr>
+			<div class="label label-flex">normal</div>
+			<hr>
+			<div class="label label-red">red</div>
+			<div class="label label-blue">blue</div>
+			<div class="label label-green">green</div>
+			<div class="label label-orange">orange</div>
+			<div class="label label-white">white</div>
+			<div class="label label-black">black</div>
+			<hr>
+			<div class="label label-red disabled">red</div>
+			<div class="label label-blue disabled">blue</div>
+			<div class="label label-green disabled">green</div>
+			<div class="label label-orange disabled">orange</div>
+			<div class="label label-white disabled">white</div>
+			<div class="label label-black disabled">black</div>
+		</div>
+	</div>
+
+	<h2 class="ttl ttl-border-wb" id="list"><span>リスト</span></h2>
+	<div class="panel">
+		<div class="panel-inner">
+			<ul class="list">
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+			</ul>
+			<hr>
+			<ul class="list list-number">
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリスト</li>
+			</ul>
+			<hr>
+			<ul class="list list-icon">
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+			</ul>
+			<hr>
+			<ul class="list list-icon list-horizon">
+				<li>リスト</li>
+				<li>リスト</li>
+				<li>リスト</li>
+				<li>リスト</li>
+				<li>リスト</li>
+				<li>リスト</li>
+			</ul>
+			<hr>
+			<ul class="list list-notes">
+				<li>※リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>※リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+				<li>※リストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+			</ul>
+			<hr>
+			<dl class="list list-news">
+				<dt>2014/08/23</dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+
+				<dt>2014/08/23</dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+			</dl>
+			<hr>
+			<dl class="list list-news">
+				<dt>2014/08/23<span class="label label-red label-xsmall">お知らせ</span></dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+
+				<dt>2014/08/23<span class="label label-red label-xsmall">お知らせ</span></dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+			</dl>
+			<hr>
+			<dl class="list list-news-horizon">
+				<dt>2014/08/23</dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+
+				<dt>2014/08/23</dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+			</dl>
+			<hr>
+			<dl class="list list-news-horizon">
+				<dt>2014/08/23</dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+
+				<dt>2014/08/23</dt>
+				<dd>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</dd>
+			</dl>
+		</div>
+	</div>
+
+</section>
+
+</body>
+</html>

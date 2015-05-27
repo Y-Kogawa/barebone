@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	リスト
+------------------------------------------------------------*/
+.list {
+	li, dd {
+		margin-bottom: 5px;
+	}
+
+	> &:first-child {
+		margin-top: 0;
+	}
+
+	&.list-horizon {
+		li {
+			margin-right: 10px;
+			display: inline-block;
+		}
+	}
+
+	&.list-icon {
+		li {
+			padding-left: 8px;
+			background: url(../img/icon_arrow01.png) no-repeat left .35em;
+		}
+	}
+
+	&.list-number {
+		padding-left: 2.2em;
+		li {
+			list-style: decimal;
+		}
+	}
+
+	&.list-notes {
+		li {
+			padding-left: 1em;
+			text-indent: -1em;
+		}
+	}
+
+	&.list-news {
+		dt {
+			font-weight: bold;
+		}
+
+		dd {
+			margin-bottom: 5px;
+		}
+
+		.label {
+			margin-left: 5px;
+			vertical-align: middle;
+		}
+	}
+
+	&.list-news-horizon {
+		@include cf;
+		dt, dd {
+			margin-bottom: 5px;
+		}
+
+		dt {
+			float: left;
+			clear: left;
+			font-weight: bold;
+		}
+
+		dd {
+			padding-left: 8em;
+		}
+	}
+}

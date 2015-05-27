@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "vars";
+@import "normalize";
+@import "functions";
+
+// barebone components start
+@import "component/utilities";
+@import "component/tuning";
+@import "component/background";
+@import "component/padding";
+@import "component/headline";
+@import "component/column";
+@import "component/grid";
+@import "component/panel";
+@import "component/text-runaround";
+@import "component/button";
+@import "component/label";
+@import "component/list";
+@import "component/etc";
+// barebone components end
+
+@import "layout";
+/*------------------------------------------------------------
+	見出し
+------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+	ボタン
+------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+	箇条書き
+------------------------------------------------------------*/
